@@ -2,9 +2,6 @@
 
 A less annoying birthday picker
 
-[npm-image]: http://img.shields.io/npm/v/antd.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/react-birthday-picker
-
 ## Installing
 
 ```
