@@ -19,9 +19,9 @@ const Picker: FC<DatePickerOptions> = ({
   useEffect(() => {
     if (day && month && year && year.length === 4 && onChange) {
       const momentString = `${year}/${month}/${day}`;
-      onChange(momentString);
+      onChange && onChange(momentString);
     } else {
-      onChange(undefined);
+      onChange && onChange(undefined);
     }
   }, [day, month, year]);
   const handleChange = (value: string, name: string) => {
