@@ -19,6 +19,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       <input
         value={props.value}
         onChange={onChange}
+        type="number"
         onKeyDown={handleKeyDown}
         ref={ref}
         className={styles.input}
