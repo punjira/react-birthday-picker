@@ -12,6 +12,17 @@
   border-radius: 0px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
 .input:first-child {
   border-radius: 5px 0px 0px 5px;
   margin-right: -1px;
