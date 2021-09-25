@@ -45,6 +45,9 @@ const Picker: FC<DatePickerOptions> = ({
         if (!year && !value) {
           [monthRef.current && monthRef.current.focus()];
         }
+        if (value?.length === 4) {
+          yearRef.current && yearRef.current.blur();
+        }
         setYear(value);
         break;
       default:
