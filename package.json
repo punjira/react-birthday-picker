@@ -7,6 +7,13 @@
   "files": [
     "build"
   ],
+  "bugs": {
+    "url": "https://github.com/punjira/react-birthday-picker/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/punjira/react-birthday-picker"
+  },
   "scripts": {
     "build": "rollup -cw",
     "build:watch": "rollup -cw",
