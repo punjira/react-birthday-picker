@@ -13,12 +13,14 @@ npm install react-birthday-picker
 import the library
 
 ```js
-import Picker from "react-birthday-picker";
+import { BirthdayPicker } from "react-birthday-picker";
 ```
 
 use in your components
 
 ```jsx
+import { BirthdayPicker } from "react-birthday-picker";
+
 function App() {
   const [date, setDate] = useState("");
   const handleChange = (date: string | null) => {
@@ -26,7 +28,7 @@ function App() {
   };
   return (
     <div className="App">
-      <Picker
+      <BirthdayPicker
         onChange={handleChange}
         placeHolders={["doy", "month", "yor"]}
         style={{ width: "200px" }}
