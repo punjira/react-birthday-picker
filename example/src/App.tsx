@@ -1,6 +1,6 @@
 import moment from "moment";
 import React, { useState } from "react";
-import Picker from "react-birthday-picker";
+import { BirthdayPicker } from "react-birthday-picker";
 
 function App() {
   const [date, setDate] = useState("");
@@ -9,7 +9,7 @@ function App() {
   };
   return (
     <div className="App">
-      <Picker
+      <BirthdayPicker
         onChange={handleChange}
         placeHolders={["روز", "ماه", "سال"]}
         style={{ width: "200px" }}
