@@ -1,0 +1,34 @@
+.input {
+  border: none;
+  outline: none;
+  padding: 7px;
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+  border: solid 1px;
+  border-color: #ddd;
+  outline: none;
+  border-collapse: collapse;
+  border-radius: 0px;
+}
+
+.input:first-child {
+  border-radius: 5px 0px 0px 5px;
+  margin-right: -1px;
+  margin-left: 1px;
+}
+
+.input:last-child {
+  border-radius: 0px 5px 5px 0px;
+  margin-left: -1px;
+  margin-right: 1px;
+}
+
+.input:hover {
+  border-color: #aaa;
+  z-index: 2;
+}
+.input:focus {
+  border-color: blue;
+  z-index: 3;
+}
