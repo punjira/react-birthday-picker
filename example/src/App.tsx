@@ -15,6 +15,13 @@ function App() {
         style={{ width: "200px" }}
       />
       <h2>{moment(date, "YYYY/MM/DD").unix()}</h2>
+      <br />
+      <BirthdayPicker
+        placeHolders={["روز", "ماه", "سال"]}
+        style={{ width: "200px" }}
+        value={["11", "3", "1374"]}
+      />
+      <br />
     </div>
   );
 }
