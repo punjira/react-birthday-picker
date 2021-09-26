@@ -15,6 +15,14 @@ function App() {
         style={{ width: "200px" }}
       />
       <h2>{moment(date, "YYYY/MM/DD").unix()}</h2>
+      <label>controlled inputs</label>
+      <br />
+      <BirthdayPicker
+        onChange={handleChange}
+        placeHolders={["day", "month", "year"]}
+        style={{ width: "200px" }}
+        value={["11", "3", "1374"]}
+      />
     </div>
   );
 }
