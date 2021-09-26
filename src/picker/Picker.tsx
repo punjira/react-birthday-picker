@@ -8,11 +8,19 @@ const Picker: FC<DatePickerOptions> = ({
   placeHolders = ["day", "month", "year"],
   className = "",
   onChange,
+  value,
   ...props
 }) => {
   const [day, setDay] = useState<string>("");
   const [month, setMonth] = useState<string>("");
   const [year, setYear] = useState<string>("");
+  useEffect(() => {
+    if (value && value.length) {
+      setDay(value[0]);
+      setMonth(value[1]);
+      setYear(value[2]);
+    }
+  }, [value]);
   const dayRef = useRef(null);
   const monthRef = useRef(null);
   const yearRef = useRef(null);
