@@ -7,4 +7,5 @@ export interface DatePickerOptions {
   inputStyle?: CSSProperties;
   className?: string;
   onChange?: (value: string | null) => void;
+  value?: [string, string, string];
 }
