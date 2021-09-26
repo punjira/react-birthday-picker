@@ -6,6 +6,7 @@ import style from "./style.module.css";
 
 const Picker: FC<DatePickerOptions> = ({
   placeHolders = ["day", "month", "year"],
+  value,
   className = "",
   onChange,
   ...props
@@ -16,6 +17,13 @@ const Picker: FC<DatePickerOptions> = ({
   const dayRef = useRef(null);
   const monthRef = useRef(null);
   const yearRef = useRef(null);
+  useEffect(() => {
+    if (value) {
+      setDay(value[0]);
+      setMonth(value[1]);
+      setYear(value[2]);
+    }
+  }, [value]);
   useEffect(() => {
     if (day && month && year && year.length === 4 && onChange) {
       const momentString = `${year}/${month}/${day}`;
