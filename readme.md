@@ -47,6 +47,11 @@ notice how `react-birthday-picker` doesn't concern itself with parsing and forma
 Pass your style as `style` props and `inputStyle` prop.
 you can also choose to pass your own `className` prop to component and apply class stylings.
 
+## Contribution
+
+Commits are protected by [husky](https://typicode.github.io/husky/#/). By default you can't commit on master and dev (long living branches) branches.  
+Create a new branch prefixing it with `feature/`, `issue/`, `hotfix/`, etc and merge it to dev branch and create a PR.
+
 ## Tests
 
 run
