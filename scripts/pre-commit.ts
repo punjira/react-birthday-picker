@@ -19,7 +19,14 @@ const YELLOW = "\x1b[33m";
     branch === "master"
   ) {
     console.log(
-      RED + " You can't commit on " + YELLOW + " " + branch + " branch" + RESET
+      RED +
+        " You can't commit on " +
+        YELLOW +
+        " " +
+        branch +
+        RED +
+        " branch" +
+        RESET
     );
     process.exit(1);
   }
